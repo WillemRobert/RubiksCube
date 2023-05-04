@@ -1,0 +1,76 @@
+@import '../variables';
+$size: 200px;
+$zTranslate: 99px;
+
+.cube-face {
+    position: absolute;
+    height: $size;
+    width: $size;
+    background-color: #0A0A0A;
+    border-radius: 5px;
+
+    &.U {
+        -webkit-transform: rotateX(90deg) translateZ($zTranslate);
+        transform: rotateX(90deg) translateZ($zTranslate);
+
+        &.unfolded {
+            -webkit-transform: rotateY(-58deg) rotateZ(-90deg) translateX($size);
+            transform: rotateY(-58deg) rotateZ(-90deg) translateX($size);
+            transition: all 0.5s ease-in-out;
+        }
+    }
+
+    &.R {
+        -webkit-transform: translateZ($zTranslate);
+        transform: translateZ($zTranslate);
+
+        &.unfolded {
+            -webkit-transform: rotateY(-58deg) translateX($size) translateZ($zTranslate);
+            transform: rotateY(-58deg) translateX($size) translateZ($zTranslate);
+            transition: all 0.5s ease-in-out;
+        }
+    }
+
+    &.B {
+        -webkit-transform: rotateY(90deg) translateZ($zTranslate);
+        transform: rotateY(90deg) translateZ($zTranslate);
+
+        &.unfolded {
+            -webkit-transform: rotateY(-58deg) translateX(400px) translateZ($zTranslate);
+            transform: rotateY(-58deg) translateX(400px) translateZ($zTranslate);
+            transition: all 0.5s ease-in-out;
+        }
+    }
+
+    &.L {
+        -webkit-transform: rotateY(180deg) translateZ($zTranslate);
+        transform: rotateY(180deg) translateZ($zTranslate);
+
+        &.unfolded {
+            -webkit-transform: rotateY(-58deg) translateX(-$size) translateZ($zTranslate);
+            transform: rotateY(-58deg) translateX(-$size) translateZ($zTranslate);
+            transition: all 0.5s ease-in-out;
+        }
+    }
+
+    &.F {
+        -webkit-transform: rotateY(-90deg) translateZ($zTranslate);
+        transform: rotateY(-90deg) translateZ($zTranslate);
+
+        &.unfolded {
+            -webkit-transform: rotateX(0deg) rotateY(-58deg) translateZ($zTranslate);
+            transform: rotateX(0deg) rotateY(-58deg) translateZ($zTranslate);
+            transition: all 0.5s ease-in-out;
+        }
+    }
+
+    &.D {
+        -webkit-transform: rotateX(-90deg) translateZ($zTranslate) rotate(180deg);
+        transform: rotateX(-90deg) translateZ($zTranslate) rotate(180deg);
+
+        &.unfolded {
+            transform: rotateY(-58deg) rotateZ(270deg) rotateX(0deg) translateY(0px) translateX(-200px)translateZ(0px);
+            transition: all 0.5s ease-in-out;
+        }
+    }
+}

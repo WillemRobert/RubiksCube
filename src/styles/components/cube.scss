@@ -1,0 +1,20 @@
+@import '../variables';
+$size: 150px;
+
+.cube-wrapper {
+    margin: 300px 0;
+
+    .cube {
+        position: relative;
+        margin: 0 auto;
+        display: inline-block;
+        color: #000;
+        font-weight: bold;
+        border-radius: 3em;
+
+        -webkit-transition: -webkit-transform 1s linear;
+        -webkit-transform-style: preserve-3d;
+        transition: -webkit-transform 1s linear;
+        transform-style: preserve-3d;
+    }
+}

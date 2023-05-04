@@ -1,0 +1,37 @@
+@import '../variables';
+
+.cube-controls {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+    Button {
+        margin: 0.5rem;
+        color: #000;
+        font-weight: bold;
+
+        &.key-F {
+            background-color: $green;
+        }
+
+        &.key-R {
+            background-color: $red;
+        }
+
+        &.key-U {
+            background-color: $white;
+        }
+
+        &.key-B {
+            background-color: $blue;
+        }
+
+        &.key-L {
+            background-color: $orange;
+        }
+
+        &.key-D {
+            background-color: $yellow;
+        }
+    }
+}

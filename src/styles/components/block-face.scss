@@ -1,0 +1,43 @@
+@import '../variables';
+$size: 56px;
+$rounded: 10%;
+
+.block-face {
+    width: $size;
+    height: $size;
+    display: inline-block;
+    margin: 0.5rem 0 0 0.5rem;
+    outline: 1px solid transparent; // firefox aliasing
+    box-shadow: inset .05em .05em .2rem 0 rgba(white, .25),
+        inset -.05em -.05em .2rem 0 rgba(black, .25);
+
+    &.white {
+        background-color: $white;
+        color: $white;
+    }
+
+    &.red {
+        background-color: $red;
+        color: $red;
+    }
+
+    &.blue {
+        background-color: $blue;
+        color: $blue;
+    }
+
+    &.orange {
+        background-color: $orange;
+        color: $orange;
+    }
+
+    &.green {
+        background-color: $green;
+        color: $green;
+    }
+
+    &.yellow {
+        background-color: $yellow;
+        color: $yellow;
+    }
+}
